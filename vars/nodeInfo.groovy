@@ -12,4 +12,5 @@ def call() {
    }else{
        sh "ipconfig || true"
    }
+   sh "echo 'THE END'"
 }
