@@ -1,7 +1,7 @@
 
 def call() {
     sh "!!!!hostname || true"
-    sh2 "whoami || true"
+    sh "whoami || true"
     sh "id || true"
     sh "pwd || true"
     sh "env || true"
