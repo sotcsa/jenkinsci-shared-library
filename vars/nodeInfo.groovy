@@ -18,3 +18,4 @@ def call() {
 //
 //
 //
+compilation_error_expected
