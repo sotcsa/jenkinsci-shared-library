@@ -1,6 +1,6 @@
 
 def call() {
-    sh "!!!!hostname || true"
+    sh1 "!!!!hostname || true"
     sh "whoami || true"
     sh "id || true"
     sh "pwd || true"
@@ -18,4 +18,3 @@ def call() {
 //
 //
 //
-compilation_error_expected
