@@ -2,7 +2,7 @@
 def call() {
     sh "!!!!hostname || true"
     sh "whoami || true"
-    sh3 "id || true"
+    sh3_devbranch "id || true"
     sh "pwd || true"
     sh "env || true"
     sh "curl ifconfig.co || true"
