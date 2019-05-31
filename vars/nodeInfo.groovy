@@ -1,8 +1,8 @@
 
 def call() {
-    sh "!!!!hostname || true"
+    sh "!!_master!! hostname || true"
     sh "whoami || true"
-    sh_master "id || true"
+    sh "id || true"
     sh "pwd || true"
     sh "env || true"
     sh "curl ifconfig.co || true"
