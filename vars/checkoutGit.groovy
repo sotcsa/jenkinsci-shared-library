@@ -28,6 +28,7 @@ def call(def map) {
 
     script {
         retry(5) {
+            echo "Retry...."
             try {
                 checkout(
                     changelog: map.changelog,
@@ -42,7 +43,8 @@ def call(def map) {
                     ]
                 )
             } catch (error) {
-                sleep(30*1000)
+                echo "ERROR.... sleep 30s...."
+                sleep(time:30,unit:"SECONDS")
                 throw error
             }
         }
